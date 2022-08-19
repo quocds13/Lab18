@@ -4,167 +4,373 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/laptop.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title>Lab 17.1</title>
+    <title>Assignment 03</title>
   </head>
   <body>
-    <!-- NAVIGATION -->
-    <header>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <div class="container-md">
-          <a href="#" class="navbar-brand">Carousel</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-between"
-            id="navbarCollapse"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="#" class="nav-link active">Home</a>
-              </li>
-              <li class="nav-item"><a href="" class="nav-link">Link</a></li>
-              <li class="nav-item">
-                <a href="" class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- CAROUSEL -->
-
-    <div class="carousel slide" id="myCarousel" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <div class="carousel-item bg-img1 active">
-          <div class="container">
-            <div class="carousel-caption text-start text-light">
-              <h1>Example headline</h1>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dignissimos dolorem, veniam dolore exercitationem laboriosam
-                earum.
-              </p>
-              <p>
-                <a href="#" class="btn btn-lg btn-primary">Sign up today</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item bg-img2">
-          <div class="container">
-            <div class="carousel-caption text-start text-light">
-              <h1>123</h1>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dignissimos dolorem, veniam dolore exercitationem laboriosam
-                earum.
-              </p>
-              <p>
-                <a href="#" class="btn btn-lg btn-primary">Sign up today</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item bg-img3">
-          <div class="container px-2">
-            <div class="carousel-caption text-light text-start">
-              <h1>456</h1>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dignissimos dolorem, veniam dolore exercitationem laboriosam
-                earum.
-              </p>
-              <p>
-                <a href="#" class="btn btn-lg btn-primary">Sign up today</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            aria-label="Silde 1"
-            aria-current="true"
-            class="active"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="1"
-            aria-label="Silde 2"
-            aria-current="true"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="2"
-            aria-label="Silde 2"
-            aria-current="true"
-          ></button>
+    <!-- BANNER -->
+    <div id="banner" class="w-fluid position-relative">
+      <div class="bg-img1">
+        <div
+          class="d-block position-absolute top-50 start-50 translate-middle text-center">
+          <h1 class="text-light">ĐOÀN SĨ QUỐC</h1>
+          <span style="color: rgba(207, 188, 188, 0.5)">Full Stack Developer</span>
         </div>
       </div>
-      <!-- CONTENT -->
-      <section class="content">
-        <div class="container"></div>
-      </section>
-      <!-- FOOTER -->
-      <footer class="fixed-bottom">
-        <div class="container">
-          <div class="d-flex justify-content-between bg-trasparent text-secondary p-3">
-            <p class="mb-0">&copy; 2017 - 2021 Company, Inc &square; <span><a href="#">Privacy</a></span> &square; <span><a href="#">Temps</a></span></p> 
-            <a href="">Back to too</a>
+    </div>
+    <!-- NAVBAR -->
+    <section id="nav-bar">
+      <nav class="container text-center">
+        <div class="navbar-item">
+          <i class="icon icon-user"></i>
+          <a href="#">Thông tin</a>
+        </div>
+        <div class="navbar-item">
+          <i class="icon icon-doc-text-inv"></i>
+          <a href="#">Lý lịch</a>
+        </div>
+        <div class="navbar-item">
+          <h1 class="display-5">Nguyễn Văn A</h1>
+          <span class="">Full Stack Developer</span>
+        </div>
+        <div class="navbar-item">
+          <i class="icon icon-mail-alt"></i>
+          <a href="#">Chứng chỉ</a>
+        </div>
+        <div class="navbar-item">
+          <i class="icon icon-star-1"></i>
+          <a href="#">Dự Án</a>
+        </div>
+      </nav>
+    </section>
+    <!-- ABOUT -->
+    <section id="about" class="bg-grey">
+      <div class="container d-flex">
+        <div id="target">
+          <h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+          <p>
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+            <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã được
+            trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như
+            hoàn thành tốt nhất công việc được giao.
+          </p>
+        </div>
+        <div id="personal-info">
+          <h1 class="section-title">Thông tin cá nhân</h1>
+          <ul class="info">
+            <li><span>Giới tính</span> : Nam</li>
+            <li><span>Ngày sinh</span> : 19/05/2000</li>
+            <li><span>Điện thoại</span> : (+84) 912398xxx</li>
+            <li><span>Email</span> : sinhvien@funix.edu.vn</li>
+            <li><span>Địa chỉ</span> : Số 10, đường 10, Hà Nội</li>
+            <li><span>Website</span> : https://abc.tech</li>
+			<div class="pt-5">
+				<i class="icon icon-twitter"></i> <i class="icon icon-facebook"></i
+				><i class="icon icon-gplus"></i> <i class="icon icon-linkedin"></i>
+			  </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- JOB-INFO -->
+    <sesection id="job-info">
+      <div class="container d-grid mt-5">
+        <div class="items item1" style="margin-top: 20px">
+          <h1>Kinh nghiệm</h1>
+          <i class="ic-toolbox ic--large"></i>
+          <ul class="list">
+            <b>IT Helpdesk - Bệnh viện X</b>
+            <br />
+            <i> 05/2016 -</i>
+            <span class="now">Hiện tại</span>
+            <li>
+              Là Admin của bệnh viện X, quản lý phần cứng - phần mềm chung của
+              bệnh viện.
+            </li>
+            <li>
+              Làm việc trên nền tảng .NET, xây dựng triển khai các ứng dụng nhỏ
+              phục vụ yêu cầu của bệnh viện, tương tác với Database SQL Server.
+            </li>
+          </ul>
+          <ul class="list">
+            <b>Công ty X</b>
+            <br />
+            <i>06/2021 - 04/2022</i>
+            <br />
+            Web Designer
+            <li>Thiết kế Website dựa trên yêu cầu của khách hàng.</li>
+            <li>Sử dụng các công cụ: Figma , Canva, PTS</li>
+          </ul>
+        </div>
+        <div class="items item2" style="margin-top: 20px">
+          <h1>Học vấn</h1>
+          <i class="ic-pencil ic--large"></i>
+          <ul class="list">
+            <b>FUNiX</b>
+            <br />
+            <i>06/2021 - 05/2022</i>
+            <li>Tốt nghiệm chứng chỉ doanh nghiệp nhánh Fullstack</li>
+            <li>GPA: 9/10</li>
+          </ul>
+          <ul class="list">
+            <b>Cử nhân - Cao đẳng CNTT</b>
+            <br />
+            <i>08/2008 - 07/2011</i>
+            <li>Chuyên nghành phần mềm</li>
+            <li>GPA: 7.2/9</li>
+          </ul>
+        </div>
+        <div class="items item3" style="margin-top: 20px">
+          <h1>Hoạt động</h1>
+          <i class="ic-toolbox ic--large"></i>
+          <ul class="list">
+            <b>FPT Edu Hackathon 2019</b>
+            <br />
+            <i>2019 - 05/2019</i>
+            <li>Giải 3 bảng A</li>
+            <li>Đề tài: Trang web về phân loại rác thải.</li>
+          </ul>
+          <ul class="list">
+            <b>Câu lạc bộ Z</b>
+            <br />
+            <i>08/2016 - 08/2017</i>
+            <li>Trưởng ban chuyên môn</li>
+          </ul>
+        </div>
+        <div class="items item4" style="margin-top: 20px">
+          <h1>Sở thích</h1>
+          <i class="ic-telescope ic--large"></i>
+          <div class="contents">
+            <div class="content">
+              <div class="ic--medium">
+                <p
+                  style="width: 100%; color: rgba(6, 6, 249, 0.6)"
+                  class="ic-megaphone mb-0"
+                ></p>
+              </div>
+              <p>Âm nhạc</p>
+            </div>
+            <div class="content">
+              <div class="ic--medium">
+                <p
+                  style="width: 100%; color: rgba(6, 6, 249, 0.6)"
+                  class="ic-strategy mb-0"
+                ></p>
+              </div>
+              <p>Chơi game</p>
+            </div>
+            <div class="content">
+              <div class="ic--medium">
+                <p
+                  style="width: 100%; color: rgba(6, 6, 249, 0.6)"
+                  class="ic-hotairballoon mb-0"
+                ></p>
+              </div>
+              <p>Du lịch</p>
+            </div>
+            <div class="content">
+              <div class="ic--medium">
+                <p
+                  style="width: 100%; color: rgba(6, 6, 249, 0.6)"
+                  class="ic-basket mb-0"
+                ></p>
+              </div>
+              <p>Nấu ăn</p>
+            </div>
           </div>
         </div>
-      </footer>
-    </div>
-
+        <div class="items item5" style="margin-top: 20px">
+          <h1>Ngôn ngữ</h1>
+          <i class="ic-mic ic--large"></i>
+          <div class="contents">
+            <div class="content">
+              <p><b>Tiếng Anh - IELTS 7.0</b></p>
+              <span class="level"></span><span class="level"></span
+              ><span class="level level--empty"></span>
+            </div>
+            <div class="content">
+              <p><b>Tiếng Nhật - JLPT N4</b></p>
+              <span class="level"></span><span class="level level--empty"></span
+              ><span class="level level--empty"></span>
+            </div>
+          </div>
+        </div>
+        <div class="items item6" style="margin-top: 20px">
+          <h1>Kỹ năng</h1>
+          <i class="ic-tools-2 ic--large"></i>
+          <div class="contents">
+            <div class="content">
+              <p><b>Tiếng Anh - IELTS 7.0</b></p>
+              <span class="level"></span><span class="level level--empty"></span
+              ><span class="level level--empty"></span>
+            </div>
+            <div class="content">
+              <p><b>Tiếng Nhật - JLPT N4</b></p>
+              <span class="level"></span><span class="level"></span
+              ><span class="level level--empty"></span>
+            </div>
+            <div class="content">
+              <p><b>Tiếng Anh - IELTS 7.0</b></p>
+              <span class="level"></span><span class="level"></span
+              ><span class="level level--empty"></span>
+            </div>
+            <div class="content">
+              <p><b>Tiếng Nhật - JLPT N4</b></p>
+              <span class="level"></span><span class="level level--empty"></span
+              ><span class="level level--empty"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sesection>
+    <!-- CERTIFICATE -->
+    <section id="certificate" class="bg-grey">
+      <div class="container d-grid w-100 mt-5">
+        <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+        <div class="items d-grid pt-4 pb-4 mb-4 ">
+          <div class="item d-flex flex-md-column flex-sm-column flex-lg-row  align-items-md-start">
+            <img  src="images/Cert_WEB.png" alt="Cert_DBI.png" />
+            <div class="content ps-0 ">
+              <p><b>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</b></p>
+              <ul class="list ps-0">
+                <li>Chứng chỉ thuộc chương trình CCDN</li>
+                <li>GPA: 8.6</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item d-flex flex-md-column flex-sm-column flex-lg-row align-items-center align-items-md-start">
+            <img  src="images/Cert_PRF.png" alt="Cert_PRF.png" />
+            <div class="content ps-0">
+              <p><b>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</b></p>
+              <ul class="list ps-0">
+                <li>Chứng chỉ thuộc chương trình CCDN</li>
+                <li>GPA: 8.9</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="items mb-4">
+          <div id="item-row2" class="item d-flex align-items-center align-items-md-start">
+            <img class="mb-0" src="images/Cert_DBI.png" alt="Cert_DBI.png" />
+            <div class="content p-0 ms-1">
+              <p><b>CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</b></p>
+              <ul class="list m-0 p-0">
+                <li>Chứng chỉ thuộc chương trình CCDN</li>
+                <li>GPA: 8.0</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	<!-- PROJECT -->
+    <section id="project" class="mb-5">
+      <div class="container">
+        <h1 class="section-title">Dự án</h1>  
+		<div class="items">
+      <!-- PROJECT 1 -->
+      <a href="charter.html" target="_blank">
+			<div class="item w-100">
+			  <img src="images/project_1.png" alt="" />
+			  <div class="item-content">
+				  <p><h4>CV CÁ NHÂN</h4></p>
+			  </div>
+			  <div class="item-content">
+				<p><span class="now">2021</span><span class="icon-user-1">FUNiX</span><span class="icon-lamp">Developer</span> </p>
+			  </div>
+			  <table class="item-table">
+				<tr>
+				  <td class="table-col1">Mô tả</td>
+				  <td class="table-col2">Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.</td>
+				</tr>
+				<tr>
+				  <td class="table-col1">Nhiệm vụ</td>
+				  <td class="table-col2">- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+				</tr>
+				<tr>
+				  <td class="table-col1">Công nghệ</td>
+				  <td class="table-col2">- HTML, CSS</td>
+				</tr>
+			  </table>
+			</div>
+      </a>
+      <!-- PROJECT 2 -->
+      <a href="charter.html" target="_blank">
+			<div class="item w-100">
+			  <img src="images/project_2.png" alt="project_2.png" />
+			  <div class="item-content">
+				  <p><h4>TRANG WEB QUẢN LÝ THÚ CƯNG</h4></p>
+			  </div>
+			  <div class="item-content">
+				<p><span class="now">2021</span> <span class="icon-user-1">FUNiX</span><span class="icon-lamp"></span> Developer</p>
+			  </div>
+			  <table class="item-table">
+				<tr >
+				  <td class="table-col1">Mô tả</td>
+				  <td class="table-col2">Ứng dụng giúp quản lý các thông tin của thú cưng như: Cân nặng, giống, tình trạng tiêm chủng,...Bao gồm các chức năng thêm/sửa/xóa.</td>
+				</tr>
+				<tr >
+				  <td class="table-col1">Nhiệm vụ</td>
+				  <td class="table-col2">- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+				</tr>
+				<tr >
+				  <td class="table-col1">Công nghệ</td>
+				  <td class="table-col2">- HTML, CSS, Javascript</td>
+				</tr>
+			  </table>
+			</div>
+      </a>
+      <!-- PROJECT 3 -->
+      <a href="charter.html" target="_blank">
+			<div class="item w-100">
+			  <img src="images/project_3.png" alt="project_3.png" />
+			  <div class="item-content">
+				  <p><h4>TRANG WEB XEM TIN TỨC</h4></p>
+			  </div>
+			  <div class="item-content">
+				<p><span class="now">2021</span><span class="icon-user-1">FUNiX </span><span class="icon-lamp">Developer</span></p>
+			  </div>
+			  <table class="item-table">
+				<tr>
+				  <td class="table-col1">Mô tả</td>
+				  <td class="table-col2">Trang Web tin tức từ nhiều nguồn khác nhau, người dùng có thể tìm kiếm các tin tức dựa theo các từ khóa.</td>
+				</tr>
+				<tr>
+				  <td class="table-col1">Nhiệm vụ</td>
+				  <td class="table-col2">- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+				</tr>
+				<tr>
+				  <td class="table-col1">Công nghệ</td>
+				  <td class="table-col2">- HTML, CSS, Javascript</td>
+				</tr>
+			  </table>
+			</div>
+      </a>
+		  </div>
+      </div>
+    </section>
+	<!-- FOOTER -->
+    <section id="footer" class="bg-grey">
+      <div class="container-fluid p-4">
+        <ul class="container-fluid d-flex flex-row justify-content-center footer-list mb-0">
+          <li class="container  text-end  icon icon-facebook-circled"><span> Facebook</span></li>
+          <li class="container text-center  icon icon-linkedin-circled"><span> Linkedin</span></li>
+          <li class="container  text-start icon icon-github-circled"><span> Github</span></li>
+        </ul>
+      </div>
+      </div>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
