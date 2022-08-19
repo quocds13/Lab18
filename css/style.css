@@ -1,0 +1,370 @@
+:root{
+    --bg-grey:rgba(128, 128, 128,0.1);
+    --bg-line:#d6c08d;
+}
+/* Utilities */
+.bg-grey{
+    background-color: var(--bg-grey);
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #3c3333;
+}
+span {
+  font-weight: bold;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.list li::before{
+  content: "- ";
+}
+.section-title {
+  padding: 40px 0;
+  font-size: 32px;
+  font-weight: 500;
+}
+.icon {
+  color: rgba(6, 6, 249, 0.6);
+}
+/* Background */
+.bg-img1{
+    position: relative;
+    background-image: url("/images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height:50vh;
+    width: 100%;
+}
+.bg-img1::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background:linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.7)) ;
+}
+/* Navbar */
+#nav-bar{
+    position: relative;
+}
+.navbar-item{
+    display: inline-block;
+    padding: 10px 10px;
+    height: 100%;
+    vertical-align: middle;
+    border-left: 1px solid rgba(166, 160, 160, 0.5);
+}
+
+/* About */
+#target{
+    width: 50%;
+    padding: 20px 30px 20px 15%;
+    background-color: rgba(119, 119, 119, 0.1);
+}
+
+#personal-info{
+    width: 50%;
+    padding: 20px 30px 20px 5%;
+    background-color: rgba(119, 119, 119, 0.3);
+}
+#personal-info div:last-child{
+  padding-bottom: 40px;
+}
+
+/*-- JOB-INFO --*/
+#job-info .items{
+    width: 100%;
+    display: grid;
+    border: 1px solid #777;
+    /* Tạo 2 cột với độ rộng tương ứng 75% và 25% theo yêu cầu */
+    grid-template-columns: 75% 25%; 
+    /* Tạo 2 dòng dòng 1 cao 50px và dòng còn lại cao theo nội dung */
+    grid-template-rows: 50px auto;
+    /* Căn chỉnh nội dung */
+    padding: 10px 25px; 
+    align-items: center;
+  }
+  #job-info .lists{
+    list-style-type: none;
+    position: relative;
+  }
+  /* Thiết lập thêm thuộc tính cho phần tử ul và li trong khối Kinh nghiệm/Học vấn/Hoạt động*/
+  #job-info .list {
+    margin-top: 20px;
+    grid-column: 1 / span 2;
+  }
+  /* Tạo lớp giả, thêm dấu chấm tròn trước ul */
+  #job-info .list::before{
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.5);
+    content: "";
+    transform: translate(-15px, 6px);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+  /*--Kinh nghiệm-- */
+/* set thuộc tính cho thẻ span */
+.now{
+    display: inline-block;
+    background-color: rgba(0, 0, 255, 0.5);
+    font-style: italic;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 5px;
+  }
+  /* Xây dựng bố cục chung cho nội dung */
+  .contents{
+    padding: 30px 0;
+    grid-column: 1 / span 2;
+  }
+  .content{
+    text-align: center;
+    width: 80px;
+  }
+  /* ---Section-Sở thích--- */
+  .item4 .contents{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .item4 .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Thiết lập thuộc tính cho các icon lớn/nhỏ */
+  .ic--large{
+    font-size: 48px;
+  }
+  .item4 .ic--medium{
+    font-size: 26px;
+    margin: 20px 0;
+    border: 1px solid rgba(0, 0, 255, 0.5);
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+  
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  /* ---JOB INFO--- */
+
+/* Chia layout cha theo yêu cầu đề bài */
+#job-info .container {
+  /* chia 3 cột với độ rộng bằng nhau */
+  grid-template-columns: repeat(3, 32%);
+  /* tạo 6 dòng với chiều cao theo nội dung*/
+  grid-template-rows: repeat(6, auto);
+  /* tạo khoảng cách cho các item-grid */
+  gap: 0 20px;
+}
+#job-info .item1 {
+  grid-row: 1 / span 3; /*Kinh nghiệm*/
+}
+#job-info .item2 {
+  grid-row: 1 / span 2; /*Học vấn*/
+}
+#job-info .item4 {
+  grid-row: 4 / span 3; /*Sở thích*/
+}
+#job-info .item5 {
+  grid-row: 3 / span 2; /*Ngôn ngữ*/
+}
+#job-info .item6 {
+  grid-row: 2 / span 4; /*Kỹ năng*/
+}
+
+/* Chia layout con theo yêu cầu đề bài*/
+#job-info .lists{
+  list-style-type: none;
+  position: relative;
+}
+/* Thiết lập thêm thuộc tính cho phần tử ul và li trong khối Kinh nghiệm/Học vấn/Hoạt động*/
+#job-info .list {
+  margin-top: 20px;
+  grid-column: 1 / span 2;
+}
+/* Tạo lớp giả, thêm dấu chấm tròn trước ul */
+#job-info .list::before{
+  position: absolute;
+  background-color: rgba(0, 0, 255, 0.5);
+  content: "";
+  transform: translate(-15px, 6px);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+/*--Kinh nghiệm-- */
+/* set thuộc tính cho thẻ span */
+.now{
+  display: inline-block;
+  background-color: rgba(0, 0, 255, 0.5);
+  font-style: italic;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+/* Xây dựng bố cục chung cho nội dung */
+.contents{
+  padding: 30px 0;
+  grid-column: 1 / span 2;
+}
+.content{
+  text-align: center;
+  width: 80px;
+}
+/* ---Section-Sở thích--- */
+.item4 .contents{
+  display: flex;
+  justify-content: space-evenly;
+}
+.item4 .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Thiết lập thuộc tính cho các icon lớn/nhỏ */
+.ic--large{
+  font-size: 48px;
+}
+.item4 .ic--medium{
+  font-size: 26px;
+  margin: 20px 0;
+  border: 1px solid rgba(0, 0, 255, 0.5);
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+/* ---Section-Ngôn ngữ/Kỹ Năng--- */
+
+.item5 .content, .item6 .content{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.item5 .level, .item6 .level{
+  display: inline-block;
+  margin: 0 10px 0 0;
+  height: 3px;
+  width: 60px;
+  background-color:  rgba(0, 0, 255, 0.5);
+}
+.item5 .level--empty, .item6 .level--empty{
+  background-color: rgba(128, 128, 128, 0.212);
+}
+/* ---SECTION-CHỨNG CHỈ--- */
+#certificate .items{
+  border-bottom: 1px solid var(--bg-line);
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+#certificate .item{
+  padding: 20px 20px;
+}
+#item-row2{
+  width: 50%;
+}
+/* Thiết lập thuộc tính cho ảnh */
+#certificate img{
+  width: 180 px;
+  height: 120px;
+}
+/* thiết lập thuộc tính cho nội dung */
+#certificate .content{
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+  padding: 10px 20px;
+}
+#certificate .item:nth-child(2){
+  border-left: 1px solid var(--bg-line) ;
+}
+/* --PROJECT */
+/* Thiết lập thuộc tính chung cho layout Dự án */
+#project .container{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Thuộc tính chung của 3 Layout con */
+#project .items{
+  display: grid;
+  font-size: 12px;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 5%;
+}
+
+/* Layout content */
+#project .item{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
+}
+#project .item-content{
+  border: 1px solid #777;
+  padding: 10px;
+}
+/* Thiết lập thuộc tính cho bảng */
+#project .item-table{
+  
+  border: 1px solid #777;
+  border-top: none;
+  height: 100%;
+  border-collapse: collapse ;
+}
+/* Thiết lập cho nội dung cột 1  */
+#project .table-col1{
+  vertical-align: top;
+  padding: 10px ;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.5);
+  width: 25%;
+}
+/* Thiết lập cho nội dung cột 2*/
+#project .table-col2{
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.5);
+  width: 75%;
+}
+/* Thiết lập lại thuộc tính cho thẻ span trong khối nội dung */
+#project .item-content span{
+  padding: 0 10px;
+  font-style: normal;
+  border-radius: 25px;
+}
+/* ---SECTION-FOOTER--- */
+#footer{
+  margin-top: 20px;
+  background-color: var(--bg-grey); 
+}
+#footer .icon{
+  font-size: 150%;
+}
+/* ADVANCED */
+#timeLine .icon-timeline{
+  display: flex;
+  width: 50px;
+  height:50px;
+  align-items: center;
+  justify-content: center;
+  background-color: blueviolet;
+}
+#timeLine .border-style--dashed{
+  border-bottom: 1px dashed #777;
+}
+#goals .icon-basis{
+  width: 30px;
+  height:30px;
+}
